@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.terminal {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+  min-height: 300px;
+  font-family: "Courier New", monospace;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.output {
+  margin-bottom: 10px;
+  font-family: "Courier New", monospace;
+}
+
+.input-line {
+  display: flex;
+  align-items: center;
+}
+
+.input-line .blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.input {
+  color: limegreen;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: "Courier New", monospace;
+}
+
+.input::placeholder {
+  color: limegreen;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid limegreen;
+  color: limegreen;
+  padding: 5px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: limegreen;
+  color: black;
+}
+
+.link {
+  color: limegreen;
+  text-decoration: underline;
+  cursor: pointer;
+}
